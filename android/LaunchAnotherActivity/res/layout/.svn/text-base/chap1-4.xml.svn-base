@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/startscreen_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/show_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/show_list" />
+
+    <Button
+        android:id="@+id/start_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/show_list"
+        android:layout_alignParentBottom="true"
+        android:text="@string/play_game" />
+
+    <Button
+        android:id="@+id/show_music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/start_game"
+        android:layout_alignParentBottom="true"
+        android:text="@string/show_music" />
+
+    <Button
+        android:id="@+id/thread_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/show_music"
+        android:layout_alignParentBottom="true"
+        android:text="@string/thread_demo" />
+
+    <Button
+        android:id="@+id/show_countdown"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/thread_demo"
+        android:text="@string/show_countdown" />
+
+    <Button
+        android:id="@+id/service_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/show_countdown"
+        android:text="@string/service_start" />
+
+    <Button
+        android:id="@+id/service_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/show_countdown"
+        android:layout_toRightOf="@id/service_start"
+        android:text="@string/service_stop" />
+
+    <Button
+        android:id="@+id/show_alertdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/show_countdown"
+        android:layout_toRightOf="@id/service_stop"
+        android:text="@string/show_alertdialog" />
+
+    <Button
+        android:id="@+id/show_notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/show_countdown"
+        android:layout_toRightOf="@id/show_alertdialog"
+        android:text="@string/show_notification" />
+
+    <Button
+        android:id="@+id/show_p_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/show_countdown"
+        android:layout_toRightOf="@id/show_notification"
+        android:text="@string/show_p_layout" />
+
+    <Button
+        android:id="@+id/show_changed_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/show_countdown"
+        android:layout_toRightOf="@id/show_p_layout"
+        android:text="@string/show_changedText" />
+
+    <Button
+        android:id="@+id/show_text_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/service_start"
+        android:text="@string/show_text_entry" />
+
+</RelativeLayout>

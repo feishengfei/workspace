@@ -1,0 +1,218 @@
+#!/bin/sh
+topdir=`dirname $0`
+
+. $topdir/reg.sh			#reg relative function/param 
+
+. $topdir/vt_fun0.sh
+. $topdir/vt_fun1.sh
+. $topdir/port_status.sh
+. $topdir/port_control.sh
+. $topdir/pb_vlan.sh
+. $topdir/pb_vlan2.sh
+
+. $topdir/cpu_port.sh
+. $topdir/at_fun2.sh
+
+revision=37
+version=1.0
+author=Frank.Zhou
+domain=liteon.com
+
+checkMirror()
+{
+	at_fun2_get_MIRROR_EN	
+	echo MIRROR_EN:$?
+	cpu_port_get_MIRROR_PORT_NUM
+	echo MIRROR_PORT_NUM:$bits
+
+	ilist="0 1 2 3 4"
+	for i in $ilist
+	do
+		pc_get_EG_MIRROR_EN $i
+		echo EG_MIRROR_EN_$i:$?
+		pc_get_ING_MIRROR_EN $i
+		echo ING_MIRROR_EN_$i:$?
+	done
+	echo
+}
+
+mirrorPort()
+{
+	checkMirror
+	at_fun2_set_MIRROR_EN 1
+	pc_set_EG_MIRROR_EN 3 1
+	pc_set_ING_MIRROR_EN 3 0
+	cpu_port_set_MIRROR_PORT_NUM 4
+	checkMirror
+}
+
+getReg()
+{
+	dump=0
+
+	case $2 in
+	0|1|2|3|4|5)
+		if [ $4 -a $4 = -v ]
+			then dump=1
+		fi
+		
+		case "$3" in
+		st|status)
+			echo "port status:"
+			ps_readReg_show $2
+			if [ $dump -eq 1 ]
+				then
+				ps_dumpPort $2;echo
+			fi;;	
+		con|control)
+			echo "port control:"
+			pc_readReg_show $2
+			if [ $dump -eq 1 ]
+				then
+				pc_dumpPort $2;echo
+			fi;;
+		pb|vlan)
+			echo "port-based vlan:"
+			pb_vlan_readReg_show $2
+			if [ $dump -eq 1 ]
+				then
+				pb_vlan_dumpPort $2;echo
+			fi;;
+		pb2|vlan2)
+			echo "port-based vlan2:"
+			pb_vlan2_readReg_show $2
+			if [ $dump -eq 1 ]
+				then
+				pb_vlan2_dumpPort $2;echo
+			fi;;
+		*)
+			echo "port status:"
+			ps_readReg_show $2
+			echo "port control:"
+			pc_readReg_show $2
+			echo "port-based vlan:"
+			pb_vlan_readReg_show $2
+			echo "port-based vlan2:"
+			pb_vlan2_readReg_show $2;;	
+		esac;;
+	vt0|fun0)
+		echo "vlan_table fun0:"
+		readReg $VT_FUNCTION0 show
+		vt_fun0_dump;;
+	vt1|fun1)
+		echo "vlan_table fun1:"
+		readReg $VT_FUNCTION1 show
+		vt_fun1_dump;;
+	all|-a|*)
+		i_list="0 1 2 3 4 5"
+		case $3 in
+		st|status)
+			echo "port status:"
+			for i in $i_list
+				do
+				ps_readReg_show $i
+			done;;
+		con|control)
+			echo "port control:"
+			for i in $i_list
+				do
+				pc_readReg_show $i
+			done;;
+		pb|vlan)
+			echo "port-based VLAN:"
+			for i in $i_list
+				do
+				pb_vlan_readReg_show $i
+			done;;
+		pb2|vlan2)
+			echo "port-based VLAN2:"
+			for i in $i_list
+				do
+				pb_vlan2_readReg_show $i
+			done;;
+		*)
+			echo "vlan_table fun0:"
+			readReg $VT_FUNCTION0 show
+			echo "vlan_table fun1:"
+			readReg $VT_FUNCTION1 show
+
+			echo "port status:"
+			for i in $i_list
+				do
+				ps_readReg_show $i
+			done
+			
+			echo "port control:"
+			for i in $i_list
+				do
+				pc_readReg_show $i
+			done
+
+			echo "port-based VLAN:"
+			for i in $i_list
+				do
+				pb_vlan_readReg_show $i
+			done
+
+			echo "port-based VLAN2:"
+			for i in $i_list
+				do
+				pb_vlan2_readReg_show $i
+			done;;
+		esac;;
+	esac
+}
+
+usage()
+{
+	echo -e "reg Tools(V$version revision:$revision) for WALLAP\n"
+	echo "USAGE:"
+	echo -e "\treg get all [st/con/vlan/vlan2]"
+	echo -e "\treg get <0~5> [st/con/vlan/vlan2] -v"
+	echo -e "\treg get vt0/vt1"
+	echo -e "\treg get "
+	echo -e "\treg set <0~5> ATTRIBUTE VALUE"
+	echo 
+	echo "REPORT BUGS:"
+	echo -e "\treport bugs to $author@$domain"
+}
+
+setReg()
+{
+	case $2 in
+	0|1|2|3|4|5)
+		if [ $4 ]
+			then
+				case $3 in
+				ing_vlan_mode|ingmode|ing)
+					pb_vlan2_set_ING_VLAN_MODE $2 $4;;
+				eg_vlan_mode|egmode|eg)
+					pc_set_EG_VLAN_MODE $2 $4;;
+				dot1q_mode|dot1q)
+					pb_vlan2_set_DOT1Q_MODE $2 $4;;
+				*)
+					usage;;
+				esac
+			else
+				usage
+		fi;;
+	mirror)
+		mirrorPort;;
+	*)
+		usage;;
+	esac
+}
+
+main()
+{
+	case "$1" in
+	"get")
+		getReg $*;;
+	"set")
+		setReg $*;;
+	*)
+		usage;;
+	esac
+}
+
+main $*

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/layout_table_tab_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1"
+        android:stretchColumns="2" >
+
+        <Button
+            android:id="@+id/tab_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a row button" />
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/tab_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="normal button" />
+
+            <Button
+                android:id="@+id/tab_btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shinkable button" />
+
+            <Button
+                android:id="@+id/tab_btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="strchable button" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/layout_table_tab_02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:collapseColumns="1" >
+
+        <Button
+            android:id="@+id/tab_btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a row button" />
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/tab_btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="left button" />
+
+            <Button
+                android:id="@+id/tab_btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="middle button" />
+
+            <Button
+                android:id="@+id/tab_btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="right button" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/layout_table_tab_03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2" >
+
+        <Button
+            android:id="@+id/tab_btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a row button" />
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/tab_btn10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ordinary button" />
+
+            <Button
+                android:id="@+id/tab_btn11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="strechable button" />
+
+            <Button
+                android:id="@+id/tab_btn12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="strechable button" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/tab_btn13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ordinary button" />
+
+            <Button
+                android:id="@+id/tab_btn14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="strechable button" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

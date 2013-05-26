@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, BackgroundTimerActivity!</string>
+    <string name="app_name">SchedulingRunnableTask</string>
+    <string name="press_me">按我一下</string>
+
+</resources>

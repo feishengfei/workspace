@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/testintent_geo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/testintent_btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view http://cn.engadget.com" />
+
+    <Button
+        android:id="@+id/testintent_btn02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dial 15001399705" />
+
+    <Button
+        android:id="@+id/testintent_btn03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="call 10086" />
+
+    <Button
+        android:id="@+id/testintent_btn04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="view 116, 40" />
+
+    <Button
+        android:id="@+id/testintent_btn05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pick place" />
+    
+    <Button
+        android:id="@+id/testintent_btn06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="todo" />
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+#!/bin/sh
+topdir=`dirname $0`
+
+. $topdir/vt_fun0_test.sh
+. $topdir/vt_fun1_test.sh
+. $topdir/port_status_test.sh
+. $topdir/port_control_test.sh
+. $topdir/pb_vlan_test.sh
+. $topdir/pb_vlan2_test.sh
+
+root_testsuite1()
+{
+	assert_success
+
+#	vt_fun0_testsuite;echo
+#	vt_fun1_testsuite;echo
+#	ps_testsuite;echo
+#	pc_testsuite;echo
+#	pb_vlan_testsuite;echo
+#	pb_vlan2_testsuite;echo
+}
+
+readRegs()
+{
+	#get default values:
+	echo "vt_fun0 reg:"
+	readReg $VT_FUNCTION0 show
+	echo
+
+	echo "vt_fun1 reg:"
+	readReg $VT_FUNCTION1 show
+	echo
+
+	i_list="0 1 2 3 4 5"
+	dump=0
+
+	echo "port status for p0~5"
+	for i in $i_list
+		do
+		ps_readReg_show $i
+		if [ $dump -eq 1 ]
+			then
+			ps_dumpPort $i;echo
+		fi
+	done
+	echo
+
+	echo "port control for p0~5"
+	for i in $i_list
+		do
+		pc_readReg_show $i
+		if [ $dump -eq 1 ]
+			then
+			pc_dumpPort $i;echo
+		fi
+	done
+	echo
+
+	echo "port-based VLAN for p0~5"
+	for i in $i_list
+		do
+		pb_vlan_readReg_show $i
+		if [ $dump -eq 1 ]
+			then
+			pb_vlan_dumpPort $i;echo
+		fi
+	done
+	echo
+
+	echo "port-based VLAN2 for p0~5"
+	for i in $i_list
+		do
+		pb_vlan2_readReg_show $i
+		if [ $dump -eq 1 ]
+			then
+			pb_vlan2_dumpPort $i;echo
+		fi
+	done
+	echo
+}
+
+static_set()
+{
+	
+	ethreg -i eth0 
+}
+
+readRegs

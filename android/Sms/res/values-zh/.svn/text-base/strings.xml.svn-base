@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">信息</string>
+
+    <!-- sms -->
+    <string name="inbox">收件箱</string>
+    <string name="unsendbox">发件箱</string>
+    <string name="sentbox">已发箱</string>
+    <string name="draftbox">草稿箱</string>
+    <string name="servicebox">系统信息</string>
+    <string name="templatebox">短信模板</string>
+    <string name="inbox_empty">收件箱为空</string>
+    <string name="unsendbox_empty">发件箱为空</string>
+    <string name="sentbox_empty">已发箱为空</string>
+    <string name="servicebox_empty">系统信息为空</string>
+    <string name="draftbox_empty">草稿箱为空</string>
+    <string name="draft_save_title">未完成的短信</string>
+    <string name="draft_save_message">保存至草稿箱?</string>
+
+    <!-- general -->
+    <string name="save">保存</string>
+    <string name="discard">忽略</string>
+    <string name="cancel">取消</string>
+    <string name="reply">回复</string>
+    <string name="forward">转发</string>
+    <string name="delete">删除</string>
+    <string name="send">发送</string>
+    <string name="save_pos">保存标位点</string>
+    <string name="save_number">保存号码</string>
+    <string name="select_all">全选</string>
+    <string name="deselect_all">取消选择</string>
+    <string name="press_again_to_quit">再按一次退出程序</string>
+    
+    <!-- contacts -->
+    <string name="contacts">联系人</string>
+    <string name="contacts_edit">编辑联系人</string>
+    <string name="contacts_delete">删除联系人</string>
+    <string name="contacts_add">添加联系人</string>
+    <string name="contacts_name">联系人姓名</string>
+    <string name="contacts_number">联系人号码</string>
+    
+    <!-- settings -->
+    <string name="settings">设置</string>
+
+</resources>

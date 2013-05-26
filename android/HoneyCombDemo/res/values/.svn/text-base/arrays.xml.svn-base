@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string-array name="weekday">
+       <item>周一</item> 
+       <item>周二</item> 
+       <item>周三</item> 
+       <item>周四</item> 
+       <item>周五</item> 
+    </string-array>
+    
+    <string-array name="beidou">
+       <item >天枢</item> 
+       <item >天璇</item> 
+       <item >天玑</item> 
+       <item >天权</item> 
+       <item >玉衡</item> 
+       <item >开阳</item> 
+       <item >摇光</item> 
+    </string-array>
+
+</resources>

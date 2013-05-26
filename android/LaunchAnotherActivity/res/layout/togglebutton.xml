@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ToggleButton
+        android:id="@+id/togglebutton0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Lettuce" 
+        android:textOff="No Lettuce"
+        />
+    <ToggleButton
+        android:id="@+id/togglebutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Tomato" 
+        android:textOff="No Tomato"
+        />
+    
+    <ToggleButton
+        android:id="@+id/togglebutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Cheese" 
+        android:textOff="No Cheese"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lettuce, Tomato, Cheese choices:" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

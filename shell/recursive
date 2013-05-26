@@ -1,0 +1,13 @@
+#!/bin/sh
+
+i=0
+
+sayHello()
+{
+	i=`expr $i + 1`
+	echo "hello $LOGNAME $i"
+	sayHello
+}
+
+sayHello
+

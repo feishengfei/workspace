@@ -1,0 +1,37 @@
+vt_fun0 reg:
+Read  Reg:     0x0040				    0x00000000
+
+vt_fun1 reg:
+Read  Reg:     0x0044				    0x00000000
+
+port status for p0~5
+Read  Reg:     0x0100				    0x000000fe
+Read  Reg:     0x0200				    0x00001280
+Read  Reg:     0x0300				    0x00001280
+Read  Reg:     0x0400				    0x00001280
+Read  Reg:     0x0500				    0x00001280
+Read  Reg:     0x0600				    0x00001ffd
+
+port control for p0~5
+Read  Reg:     0x0104				    0x00004004
+Read  Reg:     0x0204				    0x00004004
+Read  Reg:     0x0304				    0x00004004
+Read  Reg:     0x0404				    0x00004004
+Read  Reg:     0x0504				    0x00004004
+Read  Reg:     0x0604				    0x00004004
+
+port-based VLAN for p0~5
+Read  Reg:     0x0108				    0x00010001
+Read  Reg:     0x0208				    0x00010001
+Read  Reg:     0x0308				    0x00010001
+Read  Reg:     0x0408				    0x00010001
+Read  Reg:     0x0508				    0x00010001
+Read  Reg:     0x0608				    0x00010001
+
+port-based VLAN2 for p0~5
+Read  Reg:     0x010C				    0x007e0000
+Read  Reg:     0x020C				    0x007d0000
+Read  Reg:     0x030C				    0x007b0000
+Read  Reg:     0x040C				    0x00770000
+Read  Reg:     0x050C				    0x006f0000
+Read  Reg:     0x060C				    0x005f0000

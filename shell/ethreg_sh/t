@@ -1,0 +1,14 @@
+#!/bin/sh
+remotehost='192.168.1.2'
+
+filelist="
+at_fun2.sh              pb_vlan2_test.sh  port_control.sh       port_status_test.sh  reg_test   vt_fun0.sh       vt_fun1_test.sh
+cp.sh          pb_vlan.sh        port_control_test.sh  reg                  t          vt_fun0_test.sh
+cpu_port.sh  pb_vlan2.sh    pb_vlan_test.sh   port_status.sh        reg.sh               t_util.sh  vt_fun1.sh
+
+"
+
+for file in $filelist 
+	do
+		tftp -g -l $file -r $file $remotehost
+done

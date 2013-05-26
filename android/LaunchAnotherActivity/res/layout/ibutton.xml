@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imagebutton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/bd_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fitXY" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imagebutton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="matrix"
+            android:src="@drawable/bd_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="matrix" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imagebutton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitStart"
+            android:src="@drawable/bd_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fitStart" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imagebutton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bd_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fitCenter" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imagebutton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitEnd"
+            android:src="@drawable/bd_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fitEnd" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imagebutton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="center"
+            android:src="@drawable/bd_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="center" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imagebutton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bd_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="centerCrop" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imagebutton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/bd_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="centerInside" />
+    </TableRow>
+
+    <TableRow>
+
+        <ImageButton
+            android:id="@+id/imagebutton0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/bd_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fitXY" />
+    </TableRow>
+
+</TableLayout>

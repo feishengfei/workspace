@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "Your good name please:"
+read na
+echo "Your age please:"
+read age
+nextyear=`expr $age + 1`
+echo "Hello $na, next year you will be $nextyear yrs old."
+

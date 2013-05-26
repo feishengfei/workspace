@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">启动另一堆Activity们</string>
+    <string name="play_game">开始游戏</string>
+    <string name="end_game">结束游戏</string>
+    <string name="show_list">显示列表</string>
+    
+    <string name="show_music">启动音乐</string>
+    <string name="play_music">播放音乐</string>
+    <string name="stop_thread">停止线程</string>
+    <string name="view_thread">查看线程</string>
+    <string name="thread_demo">线程例子</string>
+    <string name="press_me">按我一下</string>
+    
+    <string name="show_countdown">倒计时</string>
+    <string name="loading">加载中...</string>
+    <string name="service_start">服务启动</string>
+    <string name="service_stop">服务停止</string>
+    
+    <string name="show_alertdialog">对话框</string>
+    <string name="noti_start">启动提示</string>
+    <string name="noti_cancel">取消提示</string>
+    <string name="show_notification">提示</string>
+    
+    <string name="show_p_layout">P</string>
+    
+    <string name="changed_text1">彩虹桥</string>
+    <string name="changed_text2">高架桥</string>
+    <string name="changed_text3">宋慧乔</string>
+    <string name="button_text_color">点击改变字体颜色</string>
+    <string name="button_text_size">点击改变字体大小</string>
+    <string name="button_text_content">点击改变文本内容</string>
+    <string name="show_changedText">C</string>
+    
+    <string name="show_text_entry1">文本输入1</string>
+    <string name="show_text_entry2">文本输入2</string>
+    
+    <string name="ocean_prompt">选择你最喜欢的海洋</string>
+    <string name="start_progress">开始过程</string>
+    
+    <string name="drag_the_icon">拖动图标</string>
+    
+    <string name="contacts_edit">编辑联系人</string>
+    <string name="contacts_delete">删除联系人</string>
+    <string name="contacts_add">添加联系人</string>
+    <string name="contacts_name">联系人姓名</string>
+    <string name="contacts_number">联系人号码</string>
+    
+    <string name="inbox">收件箱</string>
+    <string name="inbox_empty">收件箱为空</string>
+    <string name="menu">菜单</string>
+    <string name="back">返回</string>
+    
+    <string name="reply">回复</string>
+    <string name="forward">转发</string>
+    <string name="delete">删除</string>
+    <string name="save_pos">保存标位点</string>
+    <string name="save_number">保存号码</string>
+    <string name="select_all">全选</string>
+    <string name="deselect_all">取消选择</string>
+    
+</resources>

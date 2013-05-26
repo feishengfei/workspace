@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">一个简单任务管理器</string>
+    <string name="tasks">任务列表</string>
+    <string name="add_task">添加任务</string>
+    <string name="cancel">取消</string>
+    <string name="unsaved_changes_title">未保存的变更</string>
+    <string name="unsaved_changes_message">您想要添加这条任务吗？</string>
+    <string name="discard">忽略</string>
+    <string name="no_tasks">无任务</string>
+    <string name="remove_completed_tasks">移除已完成的任务</string>
+    <string-array name="countries_array">
+        <item>中国</item>
+        <item>俄罗斯</item>
+        <item>朝鲜</item>
+        <item>韩国</item>
+        <item>日本</item>
+        <item>美国</item>
+        <item></item>
+        <item>新加坡</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+</resources>
