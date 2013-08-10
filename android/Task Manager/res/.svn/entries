@@ -1,43 +1,0 @@
-10
-
-dir
-60
-svn://localhost/repos/Task%20Manager/res
-svn://localhost/repos
-
-
-
-2012-03-03T23:41:13.836779Z
-59
-xzhou
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5f4376af-0309-4d59-ad87-7d3c70d32041
-
-values
-dir
-
-drawable-hdpi
-dir
-
-drawable-ldpi
-dir
-
-drawable-mdpi
-dir
-
-layout
-dir
-

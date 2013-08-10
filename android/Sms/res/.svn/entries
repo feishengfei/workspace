@@ -1,49 +1,0 @@
-10
-
-dir
-165
-svn://localhost/repos/Sms/res
-svn://localhost/repos
-
-
-
-2012-05-09T09:20:05.029864Z
-165
-xzhou
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5f4376af-0309-4d59-ad87-7d3c70d32041
-
-values
-dir
-
-drawable-hdpi
-dir
-
-drawable-ldpi
-dir
-
-drawable-mdpi
-dir
-
-drawable-xhdpi
-dir
-
-layout
-dir
-
-values-zh
-dir
-

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="hello">Click Button to Show Text</string>
-    <string name="app_name">ClickButtonToShowText</string>
-    <string name="show_text_after_click">Now you see the text. Instrumentation Works!</string>
-    <string name="click_to_show_text">Click Me To See the Text</string>
-</resources>
